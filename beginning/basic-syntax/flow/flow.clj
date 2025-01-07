@@ -67,3 +67,11 @@
 
 (or nil)
 ;=> nil
+
+;;; and returns the first falsey value, or the last truth value (if where are no false values)
+
+(and "a" "b")
+;=> "b"
+
+(and "a" nil false)
+;=> nil
