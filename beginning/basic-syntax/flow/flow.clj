@@ -14,10 +14,24 @@
 ;Clojure seems awesome.
 ;And more awesome with do.
 
-;;; with do you can chain  more expression into one condition
+;;; with do you can chain several more expression into one condition
 
 ;;; with when you have a combination of if and do. But you don't have else operand
 
 (when true
   (println "Clojure seems awesome.")
   (println "And more awesome with when."))
+;Clojure seems awesome.
+;And more awesome with when.
+
+;;; booleans and nil
+
+;;; there are true and false boolean values in Clojure. nil represents the no value
+
+;;; You can check if a value is nil with nil? expression
+
+(nil? 0)
+;=> false
+
+(nil? nil)
+;=> true
