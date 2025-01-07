@@ -46,3 +46,24 @@
   "nil is true"
   "nil is false")
 ;=> "nil is false"
+
+;;; Equality operator is =
+
+(= 1 1)
+;=> true
+
+(= 1 2)
+;=> false
+
+;;; Clojure also has and and or operators. Those act bit differently than in other langs
+
+;;; or returns the first true value or the last value
+
+(or false nil "this will be returned")
+;=> "this will be returned"
+
+(or (= 0 1) (= "a" "b"))
+;=> false
+
+(or nil)
+;=> nil
