@@ -35,3 +35,14 @@
 
 (nil? nil)
 ;=> true
+
+;;; Both nil and false stand for logical falseness, all other values are considered true
+
+(if nil? "random string"
+    "this random string is true")
+;=> "this random string is true"
+
+(if nil
+  "nil is true"
+  "nil is false")
+;=> "nil is false"
